@@ -1,12 +1,12 @@
-# Handle all text files
-* text=auto
-
-# Handle JavaScript and configs as LF only
+# Force LF for source code
 *.js text eol=lf
-*.jsx text eol=lf
-*.json text eol=lf
 *.ts text eol=lf
+*.jsx text eol=lf
 *.tsx text eol=lf
-*.html text eol=lf
+*.json text eol=lf
 *.css text eol=lf
+*.html text eol=lf
 *.md text eol=lf
+
+# Ignore line endings in node_modules
+node_modules/** -text
